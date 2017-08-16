@@ -1,0 +1,183 @@
+
+/* ==========================================================================
+   Base styles:
+   ========================================================================== */
+/* Fix to include padding and border in the total width for each element */
+
+@import url('https://fonts.googleapis.com/css?family=Expletus+Sans|PT+Sans');
+
+* {
+  box-sizing: border-box;
+}
+
+/* Fix for responsive images */
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Expletus Sans', cursive;
+  text-align: center;
+  margin: 0;
+}
+
+/* ----------------------------------------
+Header
+------------------------------------------- */
+
+header {
+  background-image: url('../images/dusk.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 750px;
+  margin-top: -40px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+  word-spacing: 60px;
+  margin-top: 10px;
+}
+
+nav a {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+/* ----------------------------------------
+Typography
+------------------------------------------- */
+
+h1 {
+  font-size: 60px;
+  padding-top: 150px;
+  margin-bottom: 0;
+  color: #ffffff;
+}
+
+h3 {
+  font-size: 25px;
+  color: #ffffff;
+}
+
+/*h2 {
+  font-size: 40px;
+}*/
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ffffff;
+  opacity: .70;
+}
+
+p {
+  font-family: 'PT Sans', sans-serif;
+}
+
+
+/* ----------------------------------------
+Lists
+------------------------------------------- */
+
+
+
+/* ----------------------------------------
+Layout
+------------------------------------------- */
+
+
+#about {
+  /*background-image: url('../images/road.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 750px;*/
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+}
+
+/* ----------------------------------------
+Form
+------------------------------------------- */
+#contact {
+  background-image: url('../images/work.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 750px;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  margin-top: 200px;
+}
+
+form {
+  text-align: left;
+  width: 30%;
+  margin-top: 250px;
+  padding: 50px 0 30px 60px;
+}
+
+form h2 {
+  margin-top: 0;
+  font-size: 30px;
+}
+
+input, button, textarea {
+  display: block;
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  width: 80%;
+  margin-top: 4px;
+  padding: 10px 0 5px 5px;
+  border-style: solid;
+  border-width: thin;
+  border-color: #000000;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background-color: #DBDDC1;
+  opacity: .75;
+}
+
+#message {
+  padding-bottom: 70px;
+}
+
+
+/* ----------------------------------------
+Buttons
+------------------------------------------- */
+button {
+  margin-left: 65px;
+  width: 40%;
+  height: 40px;
+  padding-top: 5px;
+  background-color: #2F7F71;
+  opacity: .85;
+  color: #ffffff;
+  border-style: none;
+  border-radius: 3px;
+}
+
+button:hover {
+  opacity: 1
+}
+
+/* ----------------------------------------
+Footer
+------------------------------------------- */
