@@ -211,13 +211,9 @@ input, textarea {
 Buttons
 ------------------------------------------- */
 form button {
-  /*margin-left: 135px;*/
-  /*display: block;
-  text-align: center;*/
   margin: auto;
   width: 30%;
   height: 40px;
-  padding-top: 5px;
   background-color: #E2BA03;
   opacity: .85;
   color: #ffffff;
