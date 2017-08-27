@@ -33,7 +33,6 @@ header {
   background-image: url('../images/plants.jpg');
   background-size: cover;
   background-position: bottom;
-  background-attachment: fixed;
   height: 100vh;
   min-height: 450px;
 }
