@@ -7,9 +7,6 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
 
@@ -19,55 +16,67 @@
     <body>
         <!-- Add your site content here. Keep it pretty and use indentation :) -->
       <header>
-        <nav>
-          <a class="myname" href="index.html">Diana Hernandez</a>
-          <a href="#about">About</a>
-          <a href="#work">Work</a>
-          <a href="#resume">Resume</a>
-          <a href="#contact">Contact</a>
-        </nav>
+        <div id="#top">
+          <nav>
+            <a class="myname" href="#top">Diana Hernandez</a>
 
-        <h1><a href="index.html">Diana Hernandez</a></h1>
-        <h3>Front-End Web Developer</h3>
+            <div class="menu">
+              <a href="#about">About</a>
+              <a href="#work">Work</a>
+              <a href="#resume">Resume</a>
+              <a href="#contact">Contact</a>
+              <a target="_blank" href="https://instagram.com/dianahernandez"><i class="fa fa-instagram fa-1x" aria-hidden="true"></i></a>
+            </div>
+          </nav>
 
+          <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+
+          <h1><a href="index.html">Diana Hernandez</a></h1>
+          <h3>Front-End Web Developer</h3>
+        </div>
       </header>
 
       <main>
         <section id="about">
           <div class="about_me">
             <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Hi, my name is Diana and I like to build things!</p>
           </div>
-        </section>
 
-        <section id="skills">
+        <div class="skills">
           <h2>Skills</h2>
-          <div class="skills">
-            <i class="fa fa-html5 fa-4x" aria-hidden="true"></i>
-            <p>HTML5</p>
-            <i class="fa fa-css3 fa-4x" aria-hidden="true"></i>
-            <p>CSS3</p>
-            <i class="fa fa-id-card fa-4x" aria-hidden="true"></i>
-            <p>Placeholder</p>
+
+            <div class="skills_icons">
+              <div class="skills1">
+                <img src="images/html.png" alt="HTML">
+                <img src="images/css.png" alt="CSS">
+              </div>
+
+              <div class="skills2">
+                <img src="images/js.png" alt="Javascript">
+                <img src="images/jquery.png" alt="jQuery">
+              </div>
+            </div>
+
           </div>
         </section>
 
         <section id="work">
             <h2>Work</h2>
             <div class="projects">
-              <div class="Project1">
-                <a href="https://placeholder.com"><img src="http://via.placeholder.com/200x300" alt="placeholder"></a>
-                <h4>Lorem</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <a href="#">Site Link</a>
+              <div class="project1">
+                <img src="images/29rooms.jpg" alt="29Rooms">
+                <a target="_blank" href="https://www.refinery29.com/29rooms/">29Rooms</a>
               </div>
 
-              <div class="Project2">
-                <a href="https://placeholder.com"><img src="http://via.placeholder.com/200x300" alt="placeholder"></a>
-                <h4>ipsum</h4>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <a href="#">Site Link</a>
-              </div>
+              <div class="project2">
+                <img src="images/pigallebasketball.jpg" alt="Pigalle Basketball">
+
+                <a target="_blank" href="https://www.pigallebasketball.com">Pigalle Basketball</a>
 
             </div>
           </section>
