@@ -34,7 +34,7 @@ header {
   background-size: cover;
   background-position: bottom;
   height: 100vh;
-  min-height: 450px;
+  min-height: 1000px;
 }
 
 nav {
@@ -159,7 +159,7 @@ Layout
   background: linear-gradient(to bottom, #FE5303 50%, #ffffff 50%);
   color: #ffffff;
   height: 100vh;
-  min-height: 450px;
+  min-height: 1000px;
 }
 
 #about p {
@@ -207,7 +207,7 @@ Layout
   background-color: #E2BA03;
   color: #ffffff;
   height: 100vh;
-  min-height: 450px;
+  min-height: 1000px;
 }
 
 #work h2 {
@@ -248,7 +248,7 @@ Form
   display: flex;
   justify-content: center;
   height: 100vh;
-  min-height: 450px;
+  min-height: 1000px;
 }
 
 form {
