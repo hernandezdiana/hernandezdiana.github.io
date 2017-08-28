@@ -12,7 +12,7 @@ Base styles:
 
 /* Fix for responsive images */
 img {
-  max-width: 100%;
+  max-width: 100%;]
 }
 
 body {
@@ -34,7 +34,7 @@ header {
   background-size: cover;
   background-position: bottom;
   height: 100vh;
-  min-height: 1000px;
+  min-height: 450px;
 }
 
 nav {
@@ -82,6 +82,10 @@ nav a {
   text-transform: uppercase;
 }
 
+hr {
+  display: none;
+}
+
 /* ----------------------------------------
 Hamburger Menu
 ------------------------------------------- */
@@ -125,6 +129,7 @@ h2 {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 a:visited {
@@ -159,7 +164,7 @@ Layout
   background: linear-gradient(to bottom, #FE5303 50%, #ffffff 50%);
   color: #ffffff;
   height: 100vh;
-  min-height: 1000px;
+  min-height: 450px;
 }
 
 #about p {
@@ -170,7 +175,7 @@ Layout
 }
 
 .skills {
-  margin-top: 250px;
+  margin-top: 100px;
 }
 
 .skills h2 {
@@ -197,6 +202,7 @@ Layout
   border-top: 4px;
   border-bottom: 4px;
   border-right: 4px;
+  overflow: hidden;
 }
 
 #work:focus {
@@ -207,29 +213,24 @@ Layout
   background-color: #E2BA03;
   color: #ffffff;
   height: 100vh;
-  min-height: 1000px;
+  min-height: 450px;
 }
 
 #work h2 {
-  padding-bottom: 90px;
-}
-
-#work p {
-  font-size: 22px;
-  word-spacing: 5px;
-  line-height: 50px;
-  font-weight: 600;
+  padding-bottom: 50px;
 }
 
 .projects {
   display: flex;
   justify-content: center;
+  align-content: center;
   position: relative;
 }
 
 .projects img {
   height: 400px;
   width: auto;
+  margin-left: 25px;
   margin-bottom: 25px;
   border-radius: 40px;
 }
@@ -248,13 +249,13 @@ Form
   display: flex;
   justify-content: center;
   height: 100vh;
-  min-height: 1000px;
+  min-height: 450px;
 }
 
 form {
   text-align: center;
   width: 40%;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-right: 400px;
   position: relative;
 }
@@ -298,10 +299,9 @@ Buttons
 ------------------------------------------- */
 .projects a {
   display: inline-block;
-  width: 20%;
+  width: auto;
   height: 40px;
   background-color: #4677CE;
-  opacity: 1;
   color: #ffffff;
   border-style: none;
   border-radius: 3px;
@@ -310,7 +310,7 @@ Buttons
 }
 
 .projects a:hover {
-  opacity: .95;
+  background-color: #AA3A27;
   transition: all .2s ease-in-out;
 }
 
@@ -340,6 +340,12 @@ footer p {
 /* ----------------------------------------
 Media Queries
 ------------------------------------------- */
+@media screen and (max-width: 1423px) {
+  .projects img {
+    height: 375px;
+  }
+}
+
 
 @media screen and (max-width: 1386px) {
 
@@ -347,8 +353,30 @@ Media Queries
     word-spacing: 30px;
   }
 
+  .projects img {
+    height: 350px;
+  }
+
   form {
-    width: 40%;
+    width: 45%;
+  }
+}
+
+
+@media screen and (max-width: 1199px) {
+  .projects img {
+    height: 325px;
+  }
+
+  form {
+    width: 50%;
+  }
+}
+
+
+@media screen and (max-width: 1114px) {
+  .projects img {
+    height: 310px;
   }
 }
 
@@ -367,8 +395,15 @@ Media Queries
     word-spacing: 20px;
   }
 
-  form {
-    width: 45%;
+  .projects img {
+    height: 295px;
+  }
+}
+
+
+@media screen and (max-width: 1019px) {
+  .projects img {
+    height: 285px;
   }
 }
 
@@ -387,32 +422,40 @@ Media Queries
     font-size: 30px;
   }
 
-  h2 {
-    font-size: 60px;
+  .projects img {
+    height: 275px;
+  }
+}
+
+
+@media screen and (max-width: 947px) {
+  .projects img {
+    height: 250px;
   }
 
-  .skills h2 {
-    padding-bottom: 30px;
+  .projects {
+    margin-top: 30px;
   }
 
-  .skills {
-    margin-top: 310px;
-    padding-bottom: 105px;
+  form {
+    margin-right: 350px;
   }
-
-  .skills_icons img {
-    height: 120px;
-  }
-
 }
 
 
 @media screen and (max-width: 864px) {
-
   .skills_icons img {
-    height: 110px;
+    height: 130px;
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .projects img {
+    height: 220px;
+  }
+
+  form {
+    margin-right: 325px;
   }
 }
 
@@ -426,12 +469,25 @@ Media Queries
     font-size: 33px;
   }
 
+  h2 {
+    font-size: 70px;
+  }
+
   .navbar {
     word-spacing: 10px;
   }
 
+  .skills_icons img {
+    height: 115px;
+  }
+
+  .skills {
+    padding-top: 30px;
+  }
+
   form {
-    width: 50%;
+    width: 90%;
+    margin-left: 50px;
   }
 }
 
@@ -445,8 +501,12 @@ Media Queries
     font-size: 31px;
   }
 
+  h2 {
+    font-size: 60px;
+  }
+
   .myname {
-    /*display: inline-block;*/
+    font-size: 22px;
     margin: 0;
     padding: 0;
   }
@@ -471,16 +531,23 @@ Media Queries
   }
 
   .open {
-    height: 300px;
+    height: 400px;
   }
 
-  nav a {
+  hr {
+    width: 70%;
+    height: .5px;
+    background-color: #38251C;
+    border-style: none;
+  }
+
+  nav a, hr {
     display: block;
-    margin-top: 30px;
+    margin-top: 33px;
   }
 
-  nav a {
-    font-size: 19px;
+  .menu a {
+    font-size: 28px;
   }
 
   nav, .navbar {
@@ -502,15 +569,11 @@ Media Queries
     opacity: 1;
   }
 
-  .projects {
-    flex-direction: column;
-  }
-
   form {
     text-align: center;
-    width: 80%;
-    margin-top: 0;
-    margin-right: 0;
+    width: 70%;
+    margin: 0;
+    padding-top: 50px;
   }
 
   #about p {
@@ -520,6 +583,14 @@ Media Queries
   .skills_icons img {
     height: 105px;
   }
+
+  .skills {
+    padding-top: 60px;
+  }
+
+  .projects img {
+    height: 200px;
+  }
 }
 
 
@@ -528,11 +599,13 @@ Media Queries
     height: 96px;
   }
 
-  .skills {
-    margin-top: 340px;
-    padding-bottom: 80px;
+  .projects {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0;
   }
 }
+
 
 
 @media screen and (max-width: 699px) {
@@ -548,10 +621,22 @@ Media Queries
     font-size: 55px;
   }
 
-  .skills_icons img {
-    height: 90px;
+  .skills_icons {
+    flex-direction: column;
   }
 
+  .skills {
+    padding-top: 27px;
+  }
+
+  .skills img {
+    margin-bottom: 20px;
+    height: 105px;
+  }
+
+  form {
+    width: 80%;
+  }
 }
 
 
@@ -565,7 +650,18 @@ Media Queries
   }
 
   .skills_icons img {
-    height: 120px;
+    height: 100px;
+  }
+
+  .skills {
+    padding-top: 27px;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .skills {
+    padding-top: 0;
+    margin-top: 80px;
   }
 }
 
@@ -587,22 +683,10 @@ Media Queries
   .navbar {
     word-spacing: 5px;
   }
-
-  form {
-    width: 90%;
-  }
-
-  .skills_icons img {
-    height: 115px;
-  }
 }
 
 
 @media screen and (max-width: 414px) {
-  .skills_icons img {
-    height: 120px;
-  }
-
   #contact {
     height: 700px;
   }
@@ -611,10 +695,6 @@ Media Queries
 @media screen and (max-width: 375px) {
   #about {
     height: 500px;
-  }
-
-  .skills_icons img {
-    height: 100px;
   }
 
   #contact {
