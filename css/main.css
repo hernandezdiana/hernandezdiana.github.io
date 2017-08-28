@@ -12,7 +12,7 @@ Base styles:
 
 /* Fix for responsive images */
 img {
-  max-width: 100%;]
+  max-width: 100%;
 }
 
 body {
@@ -128,8 +128,9 @@ h2 {
 }
 
 a {
-  text-decoration: none;
   cursor: pointer;
+  color: inherit;
+  text-decoration: none;
 }
 
 a:visited {
@@ -220,17 +221,19 @@ Layout
   padding-bottom: 50px;
 }
 
-.projects {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  position: relative;
+.projectsContainer {
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
-.projects img {
+.project_bttn {
+  text-align: center;
+}
+
+.projectsContainer img {
   height: 400px;
   width: auto;
-  margin-left: 25px;
   margin-bottom: 25px;
   border-radius: 40px;
 }
@@ -297,9 +300,9 @@ input:focus, textarea:focus {
 /* ----------------------------------------
 Buttons
 ------------------------------------------- */
-.projects a {
+.projectBttn a {
   display: inline-block;
-  width: auto;
+  width: 30%;
   height: 40px;
   background-color: #4677CE;
   color: #ffffff;
@@ -309,7 +312,7 @@ Buttons
   padding: 10px;
 }
 
-.projects a:hover {
+.projectBttn a:hover {
   background-color: #AA3A27;
   transition: all .2s ease-in-out;
 }
@@ -341,8 +344,8 @@ footer p {
 Media Queries
 ------------------------------------------- */
 @media screen and (max-width: 1423px) {
-  .projects img {
-    height: 375px;
+  .projectsContainer img {
+    height: 370px;
   }
 }
 
@@ -353,8 +356,8 @@ Media Queries
     word-spacing: 30px;
   }
 
-  .projects img {
-    height: 350px;
+  .projectsContainer img {
+    height: 320px;
   }
 
   form {
@@ -364,8 +367,8 @@ Media Queries
 
 
 @media screen and (max-width: 1199px) {
-  .projects img {
-    height: 325px;
+  .projectsContainer img {
+    height: 317px;
   }
 
   form {
@@ -375,8 +378,16 @@ Media Queries
 
 
 @media screen and (max-width: 1114px) {
-  .projects img {
-    height: 310px;
+  .projectsContainer img {
+    height: 300px;
+  }
+
+  .projectBttn a {
+    width: 35%;
+  }
+
+  .projectsContainer {
+    margin-top: 15px;
   }
 }
 
@@ -395,15 +406,19 @@ Media Queries
     word-spacing: 20px;
   }
 
-  .projects img {
-    height: 295px;
+  .projectsContainer img {
+    height: 285px;
   }
 }
 
 
 @media screen and (max-width: 1019px) {
-  .projects img {
-    height: 285px;
+  .projectsContainer img {
+    height: 277px;
+  }
+
+  .projectsContainer {
+    margin-top: 20px;
   }
 }
 
@@ -422,19 +437,31 @@ Media Queries
     font-size: 30px;
   }
 
-  .projects img {
-    height: 275px;
+  .projectsContainer img {
+    height: 265px;
+  }
+
+  .projectsContainer {
+    margin-top: 25px;
   }
 }
 
 
 @media screen and (max-width: 947px) {
-  .projects img {
-    height: 250px;
+  .projectsContainer img {
+    height: 240px;
   }
 
-  .projects {
+  .projectsContainer {
     margin-top: 30px;
+  }
+
+  .projectBttn a {
+    width: 40%;
+  }
+
+  .projectsContainer {
+    margin-top: 35px;
   }
 
   form {
@@ -450,8 +477,16 @@ Media Queries
     padding-right: 20px;
   }
 
-  .projects img {
-    height: 220px;
+  .projectsContainer img {
+    height: 227px;
+  }
+
+  .projectBttn a {
+    width: 45%;
+  }
+
+  .projectsContainer {
+    margin-top: 40px;
   }
 
   form {
@@ -483,6 +518,14 @@ Media Queries
 
   .skills {
     padding-top: 30px;
+  }
+
+  .projectsContainer img {
+    height: 210px;
+  }
+
+  .projectsContainer {
+    margin-top: 50px;
   }
 
   form {
@@ -588,8 +631,22 @@ Media Queries
     padding-top: 60px;
   }
 
-  .projects img {
-    height: 200px;
+  .projectsContainer {
+    display: inline;
+  }
+
+  .projectsContainer img {
+    height: 195px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+
+  .projectBttn a {
+    width: 25%;
+  }
+
+  #work h2 {
+    padding-bottom: 0;
   }
 }
 
@@ -598,15 +655,7 @@ Media Queries
   .skills_icons img {
     height: 96px;
   }
-
-  .projects {
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 0;
-  }
 }
-
-
 
 @media screen and (max-width: 699px) {
   header h1 {
@@ -663,6 +712,10 @@ Media Queries
     padding-top: 0;
     margin-top: 80px;
   }
+
+  .projectBttn a {
+    width: 30%;
+  }
 }
 
 
@@ -683,12 +736,20 @@ Media Queries
   .navbar {
     word-spacing: 5px;
   }
+
+  .projectBttn a {
+    width: 40%;
+  }
 }
 
 
 @media screen and (max-width: 414px) {
   #contact {
     height: 700px;
+  }
+
+  .projectBttn a {
+    width: 50%;
   }
 }
 
